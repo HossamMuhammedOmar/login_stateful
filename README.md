@@ -1,10 +1,12 @@
-# Login Stateful `Flutter App`
-<br/>
-<br/>
-<br/>
-<h2> App Prototype </h2>
+# Login Stateful
+
+`Flutter App`
+
+#### Forms and Validation with Flutter
+
+## App Prototype
 <img src='lib/src/Images/AppPrototype.png' width='500px'>
-<br/>
+
 <br/>
 <br/>
 <h2> App Widget Tree </h2>
