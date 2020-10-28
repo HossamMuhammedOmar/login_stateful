@@ -1,7 +1,7 @@
 # Login Stateful `Flutter App`
-
-
-
+<br/>
+<br/>
+<br/>
 <h2> App Prototype </h2>
 <img src='lib/src/Images/AppPrototype.png' width='500px'>
 <br/>
