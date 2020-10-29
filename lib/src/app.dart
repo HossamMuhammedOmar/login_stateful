@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'screens/login_screen.dart';
 
 class App extends StatelessWidget {
   Widget build(BuildContext context) {
@@ -7,7 +8,7 @@ class App extends StatelessWidget {
         appBar: AppBar(
           title: Text('Log Me In!'),
         ),
-        body: Text('Login Form Here!'),
+        body: LoginScreen(),
       ),
     );
   }
