@@ -33,12 +33,13 @@ class LoginScreenState extends State<LoginScreen> {
         labelText: 'Email Address',
         hintText: 'you@example.com',
       ),
-      validator: (value) {
+      validator: (String value) {
         if (!value.contains('@')) {
           return 'Please Enter The Valid Email!';
         }
         return null;
       },
+      onSaved: (String value) => print('Email: ' + value),
     );
   }
 
@@ -49,11 +50,14 @@ class LoginScreenState extends State<LoginScreen> {
         labelText: 'Password',
         hintText: '******',
       ),
-      validator: (value) {
+      validator: (String value) {
         if (value.length < 4) {
           return 'Password must be at least 4 characters';
         }
         return null;
+      },
+      onSaved: (String value) {
+        print('Password: ' + value);
       },
     );
   }
@@ -69,7 +73,9 @@ class LoginScreenState extends State<LoginScreen> {
         ),
       ),
       onPressed: () {
-        formKey.currentState.validate();
+        if (formKey.currentState.validate()) {
+          formKey.currentState.save();
+        }
       },
     );
   }
