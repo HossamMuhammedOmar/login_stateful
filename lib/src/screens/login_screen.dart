@@ -8,6 +8,8 @@ class LoginScreen extends StatefulWidget {
 
 class LoginScreenState extends State<LoginScreen> {
   final formKey = GlobalKey<FormState>();
+  String email = '';
+  String password = '';
 
   Widget build(BuildContext context) {
     return Container(
@@ -39,7 +41,7 @@ class LoginScreenState extends State<LoginScreen> {
         }
         return null;
       },
-      onSaved: (String value) => print('Email: ' + value),
+      onSaved: (String value) => email = value,
     );
   }
 
@@ -56,9 +58,7 @@ class LoginScreenState extends State<LoginScreen> {
         }
         return null;
       },
-      onSaved: (String value) {
-        print('Password: ' + value);
-      },
+      onSaved: (String value) => password = value,
     );
   }
 
@@ -75,6 +75,7 @@ class LoginScreenState extends State<LoginScreen> {
       onPressed: () {
         if (formKey.currentState.validate()) {
           formKey.currentState.save();
+          print('Email: $email, Password: $password');
         }
       },
     );
