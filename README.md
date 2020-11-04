@@ -18,6 +18,9 @@
 
 .
 
+Validation Process
+![Capture](https://user-images.githubusercontent.com/49618856/98126991-de78a480-1ebe-11eb-9379-b0afe3fecbd6.PNG)
+
 ## PREVIEW APP 
 <img src='lib/src/Images/AppPreview.gif' width='500px'>
 
